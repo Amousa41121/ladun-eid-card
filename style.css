@@ -1,0 +1,177 @@
+/* Global Settings */
+
+html>* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 100%;
+    font-family: "Open-Sans", sans-serif;
+    line-height: 100%;
+    background: #3c3d3f;
+  }
+  
+  main {
+    width: 100%;
+    height: 100%;
+  }
+  
+  p,small,span {
+    line-height: 1.5em;
+  }
+  
+  h1 {
+    font-size: 3.25em; /* 52px */
+    font-weight: bold;
+    line-height: 1em;
+  }
+  
+  h2 {
+    font-size: 1.5em; /* 24px */
+    line-height: 1.842em;
+  }
+  
+  h3 {
+    font-size: 1.375em; /* 22px */
+    font-weight: bold;
+    line-height: 1.2em;
+  }
+  
+  h2,small {
+    color: #B3B4B5;
+  }
+  
+  /* Setting flex containers so they are....flexible -__- */
+  
+  .wrapper,
+  .container,
+  .col-1,
+  .col-2
+  {
+    display: flex;
+    flex: 1 100%;
+  }
+  .social-container {
+    display: flex;
+  }
+  
+  /* Adjusting alignment and layout for each flex parent  */
+  
+  .container {
+    flex-flow: column nowrap;
+    min-height: 90vh;
+    width:100%;
+  }
+  
+  .col-1, 
+  .col-2 {
+    justify-content: center;
+  }
+  
+  .col-1 {
+    align-items: center;
+    flex-basis: 100%;
+    height: 10vh;
+  }
+  
+  .col-2 {
+    flex-flow: column nowrap;
+    padding: 6% 4%;
+  }
+  
+  /*  Medium to larger screens. Breakpoint at 980px */
+  
+  @media (min-width: 61.25em) {
+    .container {
+      flex-flow: row nowrap;
+   }
+    .col-2 {
+      padding: 1.5% 1%;
+    }
+  }
+  
+  /* Styling the rest of the items  */
+  
+  /* Article Cover Section */  
+  
+  .article-cover {
+    align-items: center;
+    text-align:center;
+  }
+  
+  #article-tip1-cover {
+    background: #3c3d3f
+    ;
+    color:white;
+  }
+  
+    .article-cover-title {
+    padding: 4%;
+    }
+  
+      .social-container {
+        justify-content: center;
+        list-style: none;
+        margin-top: 20px;
+      }
+  
+        .social-container>li {
+          margin:0 2%;
+        }
+  
+          .social-container>li>a {
+            border: solid 1px #fff;
+              border-radius: 90px;
+            color: #fff;
+            padding:5px 8px;
+            text-decoration: none;  
+          }
+  
+            .social-container>li>a:hover {
+            background: #3498DB;
+          }
+  
+  /* Article Content Section */
+  
+  #article-tip1-content {
+    background: #af9750;
+    color: white;
+  }
+  
+    .article-content-summary {
+      background: #fff;
+      color: #0c0d11;
+      border: dashed 5px #f1c40f;
+      padding: 4%;
+      margin: 4% 0;
+    }
+  
+      #article-tip1-content a:hover {
+        color: #0C0D11;
+        font-size:110%;
+       }
+  
+       .divContainer {
+        position: relative;
+        text-align: center;
+        width: 50%;
+    }
+
+    .empCardName {
+        position: absolute;
+        top: 90.6%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #af9750;
+    }
+
+  @media (max-width: 768px) {
+    .divContainer {
+      width: 92%;
+    }
+
+    .empCardName {
+      top: 88.8%;
+      font-size: x-small;
+    }
+  }

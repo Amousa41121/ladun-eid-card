@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="./bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+	<script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css" />
+	<title>Eid Mubarak</title>
+</head>
+
+<body>
+	<main id="wrapper">
+		<!-- <div class="cta-section col-1">
+			<h2 id="cardTitleEn" hidden>Eid Mubarak</h2>
+			<h2 id="cardTitleAr">عيد مبارك</h2>
+		</div> -->
+
+		<section id="article-tip1" class="container">
+
+			<div id="article-tip1-cover" class="article-cover col-2 col-left ">
+				<img src="Main_logo.png" alt="" width="60%" height="10%"> 
+				<h3 id="cardTextEn" hidden>Aljazira Capital would love to congratulate you for Eid. <br><br>
+					You can create your custom Eid card by entering your name and clicking Download.
+				</h3>
+				<h3 id="cardTextAr">تود لدن للالستثمار أن تهنئكم بحلول عيد الأضحى المبارك <br><br>
+					يمكنك إنشاء بطاقة تهنئة العيد الخاصة بك عن طريق إدخال اسمك و النقر فوق تنزيل.
+				    و كل عام و أنتم بخير
+				</h3>
+				<br>
+				<div class="">
+					<label id="empNameLabel" class="visually-hidden" for="empName">الاسم</label>
+					<input onkeyup="changeName()" type="text" class="form-control" id="empName" placeholder="اسمك">
+				</div><br>
+				<div hidden class="">
+					<input checked onclick="setAr()" class="form-check-input" type="radio" name="langRadios"
+						id="arRadio" value="ar" />
+					<label class="form-check-label" for="arRadio">عربي</label>
+				</div><br>
+				<div hidden class="">
+					<input onclick="setEn()" class="form-check-input" type="radio" name="langRadios" id="enRadio"
+						value="en" />
+					<label class="form-check-label" for="enRadio">English</label>
+				</div><br>
+
+				<div class="col-4">
+					<button id="downloadBtn" onclick="saveImage()" class="btn btn-primary">تنزيل</button>
+				</div>
+			</div>
+			</div>
+
+			<div id="article-tip1-content" class="article-content col-2 col-right divContainer">
+				<img id="cardAr" src="./Eid-AR.png">
+				<img id="cardEn" src="./Eid-EN.png" hidden>
+				<p class="empCardName" id="empCardName"></p>
+			</div>
+
+		</section>
+	</main>
+	<script src="scripts.js"></script>
+</body>
+
+</html>
