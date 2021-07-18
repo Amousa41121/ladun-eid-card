@@ -155,6 +155,7 @@ html>* {
         position: relative;
         text-align: center;
         width: 50%;
+        height: 100%;
     }
 
     .empCardName {
@@ -169,6 +170,7 @@ html>* {
     .divContainer {
       width: 92%;
       height: 100%;
+      object-fit: cover;
     }
 
     .empCardName {
