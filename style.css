@@ -168,6 +168,7 @@ html>* {
   @media (max-width: 768px) {
     .divContainer {
       width: 92%;
+      height: 100%;
     }
 
     .empCardName {
